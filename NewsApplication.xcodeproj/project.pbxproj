@@ -13,6 +13,10 @@
 		27AB6D0F28488829005FC5B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27AB6D0D28488829005FC5B1 /* Main.storyboard */; };
 		27AB6D112848882B005FC5B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27AB6D102848882B005FC5B1 /* Assets.xcassets */; };
 		27AB6D142848882B005FC5B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27AB6D122848882B005FC5B1 /* LaunchScreen.storyboard */; };
+		27AB6D1C28488C62005FC5B1 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AB6D1B28488C62005FC5B1 /* NewsCell.swift */; };
+		27AB6D2228488EFF005FC5B1 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AB6D2128488EFF005FC5B1 /* News.swift */; };
+		27AB6D2428489084005FC5B1 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AB6D2328489084005FC5B1 /* Webservice.swift */; };
+		27EEE30C284940A000CDC794 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EEE30B284940A000CDC794 /* NewsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		27AB6D102848882B005FC5B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27AB6D132848882B005FC5B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27AB6D152848882B005FC5B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27AB6D1B28488C62005FC5B1 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		27AB6D2128488EFF005FC5B1 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		27AB6D2328489084005FC5B1 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		27EEE30B284940A000CDC794 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,51 @@
 		27AB6D0628488829005FC5B1 /* NewsApplication */ = {
 			isa = PBXGroup;
 			children = (
-				27AB6D0728488829005FC5B1 /* AppDelegate.swift */,
-				27AB6D0928488829005FC5B1 /* SceneDelegate.swift */,
-				27AB6D0B28488829005FC5B1 /* ViewController.swift */,
+				27AB6D2028488EE2005FC5B1 /* Service */,
+				27AB6D1F28488EDC005FC5B1 /* ViewModel */,
+				27AB6D1E28488ED6005FC5B1 /* Model */,
+				27AB6D1D28488ED2005FC5B1 /* View */,
 				27AB6D0D28488829005FC5B1 /* Main.storyboard */,
 				27AB6D102848882B005FC5B1 /* Assets.xcassets */,
 				27AB6D122848882B005FC5B1 /* LaunchScreen.storyboard */,
 				27AB6D152848882B005FC5B1 /* Info.plist */,
 			);
 			path = NewsApplication;
+			sourceTree = "<group>";
+		};
+		27AB6D1D28488ED2005FC5B1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				27AB6D1B28488C62005FC5B1 /* NewsCell.swift */,
+				27AB6D0728488829005FC5B1 /* AppDelegate.swift */,
+				27AB6D0928488829005FC5B1 /* SceneDelegate.swift */,
+				27AB6D0B28488829005FC5B1 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		27AB6D1E28488ED6005FC5B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				27AB6D2128488EFF005FC5B1 /* News.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		27AB6D1F28488EDC005FC5B1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				27EEE30B284940A000CDC794 /* NewsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		27AB6D2028488EE2005FC5B1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				27AB6D2328489084005FC5B1 /* Webservice.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +184,10 @@
 			files = (
 				27AB6D0C28488829005FC5B1 /* ViewController.swift in Sources */,
 				27AB6D0828488829005FC5B1 /* AppDelegate.swift in Sources */,
+				27AB6D2428489084005FC5B1 /* Webservice.swift in Sources */,
+				27AB6D1C28488C62005FC5B1 /* NewsCell.swift in Sources */,
+				27EEE30C284940A000CDC794 /* NewsViewModel.swift in Sources */,
+				27AB6D2228488EFF005FC5B1 /* News.swift in Sources */,
 				27AB6D0A28488829005FC5B1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
